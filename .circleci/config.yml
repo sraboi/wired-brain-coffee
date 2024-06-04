@@ -7,7 +7,7 @@ jobs:
   test-ruby:
     # Install gems, run rake tests
     docker:
-      - image: cimg/ruby:3.2-node-browsers
+      - image: cimg/ruby:3.2-node
     steps:
       - checkout
       - ruby/install-deps
