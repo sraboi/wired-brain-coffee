@@ -1,3 +1,5 @@
+name: "Issue Close App"
+about: "Automatically closes issues if they do not confirm to set templates"
 # Comment that will be sent if an issue is judged to be closed
 comment: "This issue is closed because it does not meet our issue template. Please read it."
 issueConfigs:
