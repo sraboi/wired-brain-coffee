@@ -1,19 +1,20 @@
 name: "Issue Close App"
-about: "Automatically closes issues if they do not confirm to set templates"
-# Comment that will be sent if an issue is judged to be closed
-comment: "This issue is closed because it does not meet our issue template. Please read it."
-issueConfigs:
-# There can be several configs for different kind of issues.
-- content:
-# Example 1: bug report
-  - "Describe the Bug"
-  - "Steps to Reproduce"
-  - "Expected Behaviour"
-  - "Current Behaviour"
-- content:
-# Example 2: feature request
-  - "Use Case"
-  - "Expected Behaviour"
-  - "Additional Context"
-# The issue is judged to be legal if it includes all keywords from any of these two configs.
-# Or it will be closed by the app.
+description: "Automatically closes issues if they do not confirm to set templates"
+body:
+  # Comment that will be sent if an issue is judged to be closed
+  comment: "This issue is closed because it does not meet our issue template. Please read it."
+  issueConfigs:
+  # There can be several configs for different kind of issues.
+  - content:
+  # Example 1: bug report
+    - "Describe the Bug"
+    - "Steps to Reproduce"
+    - "Expected Behaviour"
+    - "Current Behaviour"
+  - content:
+  # Example 2: feature request
+    - "Use Case"
+    - "Expected Behaviour"
+    - "Additional Context"
+  # The issue is judged to be legal if it includes all keywords from any of these two configs.
+  # Or it will be closed by the app.
